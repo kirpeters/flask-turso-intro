@@ -20,21 +20,32 @@
             <article>
 
                 <header>
-                    <h4>{{ thing["name"] }}</h4>
+                    <h4>{{ thing.name }}</h4>
                 </header>
 
-                <p>{{ thing["description"] }}</p>
+                <p>{{ thing.description }}</p>
 
                 <footer>
-                    <a href="/thing/{{ thing['id'] }}">More...</a>
+                    <a href="/thing.id }}">More...</a>
 
-                    <a href="/delete/{{ thing['id'] }}">Delete</a>
+                    <a href="/delete.id}}">Delete</a>
                 </footer>
 
             </article>
 
         {% endfor %}
 
+    </section>
+
+    <section>
+    <article> 
+    <form>
+    <label>
+    name<input type="text" name="name">
+    </label>
+    <button>Add new things</button>
+    </form>
+    </article>
     </section>
 
 {% endblock %}
